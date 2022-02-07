@@ -1,7 +1,9 @@
 import { Binding } from "@babel/traverse";
 import React, { Component } from "react";
 import {View, Text, StyleSheet} from 'react-native'
-import B5BindingData from "./B5BindingData";
+import DemoProps from "./src/Props/DemoProps";
+// import B5BindingData from "./B5BindingData";
+import RenderwithMap from "./src/RenderwithMap";
 
 
 export default class App extends Component {
@@ -9,7 +11,8 @@ export default class App extends Component {
     return (
       <View style={styles.containerbg}>
        
-   <B5BindingData />
+   {/* <RenderwithMap /> */}
+   <DemoProps />
   
 
       </View>
@@ -19,6 +22,8 @@ export default class App extends Component {
 const styles =StyleSheet.create({
 containerbg:{
   flex:1,
-  backgroundColor:'#80e27e'
+  backgroundColor:'pink',
+  justifyContent:'center',
+  alignItems:'center'
 }
 })
